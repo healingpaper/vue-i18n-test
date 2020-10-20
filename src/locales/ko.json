@@ -1,8 +1,8 @@
 {
-  "essential_links": "필수 링크",
-  "core_docs": "코어 독스",
-  "forum": "포럼",
-  "community_chat": "커뮤니티 챗",
-  "ecosystem": "애코시스템",
-  "hello_msg": "환영합니다."
+    "essential_links": "필수 링크",
+    "core_docs": "코어 문서",
+    "forum": "포럼",
+    "community_chat": "커뮤니티 챗",
+    "ecosystem": "애코시스템",
+    "hello_msg": "환영합니다."
 }
