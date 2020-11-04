@@ -1,0 +1,614 @@
+{
+    "common": {
+      "imageUpload": {
+        "label": { "addImage": "画像選択" },
+        "alt": { "image": "画像" },
+        "message": {
+          "uploadError": "は必須です。 入力してください。",
+          "weightError": "最大ファイルサイズを超過しました。ファイルサイズは最大{size}MBです。"
+        }
+      },
+      "sideBar": {
+        "dashboard": "ホーム ∙ お知らせ",
+        "hospital": {
+          "title": "クリニック",
+          "index": "クリニック情報",
+          "doctor": "ドクター情報",
+          "contact": "連絡先情報",
+          "point": "ポイント内訳"
+        },
+        "event": {
+          "title": "이벤트/리얼모델 관리",
+          "info": "정보",
+          "approval": "승인요청"
+        },
+        "eventV2": "イベント管理",
+        "consultation": "상담관리",
+        "evaluation": "평가관리",
+        "ads": {
+          "title": "부가광고관리",
+          "info": "부가광고 목록",
+          "approval": "부가광고 신청"
+        },
+        "preAdminMenu": { "stat": "(구)통계" },
+        "guide": "管理画面の利用ガイド"
+      },
+      "topHeader": {
+        "changePassword": "パスワード変更",
+        "logout": "ログアウト",
+        "currentPoint": "残高: {point}ウォン"
+      },
+      "forms": {
+        "BottomButtons": {
+          "button": {
+            "list": "一覧へ",
+            "register": "保存する",
+            "edit": "修正する"
+          },
+          "dialog": {
+            "content": "本当に作成を中止しますか？中止する場合、作成した内容をもう一度読み込むことはできません。",
+            "actions": { "cancel": "作成を中止する", "keep": "続けて作成する" }
+          }
+        }
+      },
+      "layout": {
+        "Footer": {
+          "info": {
+            "company": "株式会社ヒーリングペーパー | 代表理事 : ホン スンイル",
+            "address": "ソウル特別市江南区テヘラン路124 サムウォンタワー13階",
+            "phonenumber": "電話: 02-3443-8854",
+            "businessLicenseNumber": "事業者登録番号 : 117-81-81256",
+            "onlineMarketingNumber": "通信販売業申告 : 2015-ソウル瑞草-1147号"
+          },
+          "label": {
+            "introduction": "紹介",
+            "guide": "ガイドダウンロード",
+            "term": "利用規約"
+          },
+          "button": {
+            "service": "サービス紹介",
+            "company": "会社紹介",
+            "hospital": "クリニック用ADMIN利用ガイド",
+            "event": "イベント制作ガイド",
+            "term": "個人情報処理方針"
+          },
+          "content": "クリニックと共に歩むカンナムオンニは医療法を遵守します。下のガイドを必ず確認していただき、一緒に医療法遵守に力を入れてください。<br/>(該当資料を参考にせず発生する不利益は、医療広告の主体にあります。)"
+        }
+      },
+      "header": "カンナムオンニ管理画面",
+      "buttons": {
+        "goToList": "一覧へ",
+        "edit": "保存する",
+        "register": "登録する",
+        "confirm": "確認",
+        "cancel": "キャンセル"
+      },
+      "label": { "addImage": "画像追加" },
+      "placeholder": {
+        "default": "入力してください。",
+        "select": "選択してください。",
+        "maxInput": "最大{count}文字まで入力可能です。"
+      },
+      "warning": {
+        "maximumSize": "最大ファイルサイズを超過しました。ファイルサイズは最大2MBです。"
+      },
+      "message": { "noData": "データがありません。" },
+      "toastMessage": {
+        "checkRequiredField": "必須項目を確認してください。",
+        "error": "エラー"
+      }
+    },
+    "login": {
+      "detail": {
+        "head": { "title": "カンナムオンニ管理画面" },
+        "loginId": "ID",
+        "password": "パスワード",
+        "loginBtn": "ログイン",
+        "message": "WELCOME TO カンナムオンニ\n私たちはクリニックとユーザーにとって、\n常に誠実に信頼できるサービスであることを約束します。"
+      }
+    },
+    "doctor": {
+      "list": {
+        "head": { "title": "カンナムオンニ管理画面" },
+        "breadcrumb": { "home": "ホーム", "list": "ドクター情報" },
+        "header": {
+          "title": "ドクター情報",
+          "description": "クリニックに所属するドクターを管理するページです。"
+        },
+        "breadcrumbHome": "ホーム",
+        "breadcrumbDoctorIndex": "ドクター情報",
+        "headerTitle": "ドクター情報",
+        "headerDescription": "クリニックに所属するドクターを管理するページです。",
+        "notice": "医籍登録番号をもとに、ドクター情報を管理できます。医籍登録番号を正確に入力してください。",
+        "doctorGuideButton": "ドクター情報ガイド",
+        "registerDoctorButton": "ドクターを登録する",
+        "adjustOrderButton": "順序を調整する",
+        "editButton": "確認する",
+        "resignDoctorButton": "退職処理を行う",
+        "licenseNumber": "医籍登録番号",
+        "licenseImageUri": "医師免許証",
+        "name": "ドクター名",
+        "history": "経歴",
+        "profileImage": "プロフィール画像",
+        "sex": "性別",
+        "isCeo": "院長",
+        "majorCode": "専門医の資格",
+        "majorLicenseNumber": "専門医の資格番号",
+        "majorLicenseImageUri": "専門医の資格証",
+        "opTagList": "診療科目",
+        "opTagListText": "その他{length}個",
+        "reviewCount": "レビュー数",
+        "rating": "評価(件数)",
+        "seq": "アプリ表示順",
+        "id": "もっと見る",
+        "ceoText": "院長",
+        "waitingStatus": "承認待ち",
+        "resignDoctorDialogContent": "本当にこのドクターの退職処理を行いますか？",
+        "resignDoctorActionTitle1": "退職処理を行う",
+        "resignDoctorActionTitle2": "キャンセル",
+        "resignDoctorToastTitle": "退職処理が完了しました",
+        "addNewDoctorDialogContent": "すぐに登録可能なドクターとして確認されました。引き続き、ドクター情報を入力してください。",
+        "addNewDoctorActionTitle": "確認",
+        "moveDoctorToastTitle": "私たちのクリニックから転職しました。",
+        "toast": {
+          "clickRegisterDoctorButton": "ドクター登録は[ドクターを登録する]ボタンから行ってください。"
+        }
+      },
+      "orderModal": {
+        "title": "順序を調整する",
+        "content": "アプリで表示されるドクターの順序を変更できます。",
+        "toastErrorMsg": "ドクターリストの読み込み中に問題が発生しました。再ログインして、もう一度お試しください。",
+        "toast": {
+          "title": "変更を保存しました。",
+          "errorMsg": "ドクターリストの読み込み中に問題が発生しました。再ログインして、もう一度お試しください。"
+        },
+        "dialogContent": "表示順序の調整はドクターの医籍登録番号を登録した後に可能です。まず医籍登録番号を登録してください。医籍登録番号は目録＞もっと見る＞確認するから登録できます。",
+        "actionTitle1": "ガイドを見る",
+        "actionTitle2": "確認",
+        "toastTitle": "変更事項が反映されました。",
+        "saveOrderButton": "保存する"
+      },
+      "NewDoctorModal": {
+        "title": "ドクターを登録する",
+        "content": "ドクター登録のため名前、医籍登録番号を入力してください。",
+        "name": "ドクター名（日本語）",
+        "namePlaceholder": "ドクター名を入力してください。",
+        "licenseNumber": "医籍登録番号",
+        "licenseNumberPlaceholder": "数字のみ入力してください",
+        "licenseNumberHelperText1": "医籍登録番号は登録以降、修正できないので慎重に入力してください。",
+        "licenseNumberHelperText2": "虚偽の情報を入力した場合、カンナムオンニの利用に不利益が生じることがあります。",
+        "addDoctorButton": "登録する"
+      },
+      "DoctorInfoModal": {
+        "title": "ドクターを登録する",
+        "content": "すでに<b>他のクリニックに登録されているドクター</b>です。",
+        "description": "該当のドクターをこちらへ転職処理したい場合<br />下のボタンを押してください。",
+        "table": {
+          "licenseNumber": "医籍登録番号",
+          "name": "ドクター名<br/>（日本語）",
+          "belongedHospital": "現在の所属クリニック"
+        },
+        "button": { "moveDoctor": "私たちのクリニックに転職させる" }
+      },
+      "detail": {
+        "head": { "title": "カンナムオンニ管理画面" },
+        "breadcrumb": {
+          "home": "ホーム",
+          "list": "ドクター情報",
+          "detail": "ドクター情報を修正",
+          "new": "ドクター情報を登録"
+        },
+        "header": {
+          "title": "ドクター情報を修正",
+          "description": "クリニックに所属するドクターの情報を修正するページです。",
+          "newTitle": "ドクター情報を登録",
+          "newDescription": "クリニックに所属するドクターの情報を登録するページです。"
+        },
+        "duplicationCheckButton": "重複確認",
+        "licenseNumber": "医籍登録番号",
+        "licenseNumberPlaceholder": "数字のみ入力してください",
+        "licenseNumberHelperText1": "医籍登録番号は登録後、修正できませんので慎重に入力してください。",
+        "licenseNumberHelperText2": "虚偽の情報を入力した場合カンナムオンニの利用に不利益が生じることがあります。",
+        "licenseImageUri": "医師免許証",
+        "licenseImageUriHelperText": "最大2MB",
+        "name": "ドクター名<br/>（日本語）",
+        "namePronounce": "ドクター名<br/>（ふりがな）",
+        "history": "経歴",
+        "historyHelperText": "학회의 ‘정회원’ 표기는 의료법 위반이므로 ‘회원’으로 표기 바랍니다.",
+        "profileImage": "プロフィール画像",
+        "profileImageHelperText": "300px x 300px, 最大2MB",
+        "sex": "性別",
+        "male": "男性",
+        "female": "女性",
+        "isCeo": "院長",
+        "isCeoLabel": "院長",
+        "isCeoLabelHelperText": "院長の場合はチェックをつけてください。",
+        "majorCode": "専門医の資格",
+        "majorCodePlaceholder": "選択してください。",
+        "majorCodeHelperText": "実際に専門医の資格がある専攻だけ選択してください。虚偽の事実が発覚した場合、事前の警告なしに削除されることがあり、専攻がない場合は不定を選択してください。",
+        "noMajor": "専門医ではない",
+        "majorLicenseNumber": "専門医の資格番号",
+        "majorLicenseNumberPlaceholder": "数字のみ入力してください",
+        "majorLicenseNumberHelperText1": "専門医の資格番号は登録以降、修正できないので慎重に入力してください。",
+        "majorLicenseNumberHelperText2": "虚偽の情報を入力した場合カンナムオンニの利用に不利益が生じることがあります。",
+        "majorLicenseImageUri": "専門医の資格証",
+        "majorLicenseImageUriHelperText": "最大2MB",
+        "opTagList": "診療科目",
+        "opTagListPlaceholder": "選択してください。",
+        "inputPlaceholder": "入力してください。",
+        "newDoctorToastWarningMessage": "ドクター登録は[ドクターを登録する]ボタンから進めてください。",
+        "postDoctorToastTitle": "ドクター情報を登録",
+        "postDoctorToastContent": "登録が完了しました。",
+        "helpertext": { "maxImageSize": "最大 {size}MB" },
+        "toast": {
+          "editTitle": "ドクター情報を修正",
+          "editContent": "変更事項が反映されました。",
+          "checkLicenseNumber": "医籍登録番号の重複確認を行ってください。",
+          "alreadyExist": "すでに他のクリニックに登録されているドクターです。<br/>該当のドクターを転職させるにはお客様センターにお問い合わせください。",
+          "availableDoctorLicense": "登録可能な医籍登録番号です。"
+        },
+        "terms": "* カンナムオンニのサービスを通じてクリニックの広告およびマーケティングを推進するために個人情報を収集·利用します。"
+      }
+    },
+    "hospital": {
+      "detail": {
+        "head": { "title": "カンナムオンニ管理画面" },
+        "breadcrumb": {
+          "home": "ホーム",
+          "list": "",
+          "detail": "クリニック情報"
+        },
+        "header": {
+          "title": "クリニック情報",
+          "description": "クリニックの基本的な情報を登録するページです。"
+        },
+        "notice": "登録される画像や文章は全てクリニックの管理下にあるものを使用し、著作権を侵害するコンテンツの使用はお控えください。",
+        "label": {
+          "name": "クリニック名",
+          "namePronouce": "クリニック名<br>（フリガナ）",
+          "introduction": "クリニックの紹介",
+          "region": "地域",
+          "addressSearch": "住所",
+          "addressLocal": "住所",
+          "accessRoute": "アクセス",
+          "subway": "最寄り駅",
+          "officeHour": {
+            "main": "診療時間",
+            "mon": "月曜日",
+            "tue": "火曜日",
+            "wed": "水曜日",
+            "thu": "木曜日",
+            "fri": "金曜日",
+            "sat": "土曜日",
+            "sun": "日曜日"
+          },
+          "opTagList": "診療科目",
+          "badgeCode": "サービス",
+          "creditCard": "クレジットカード情報",
+          "medicalLoan": {
+            "main": "分割払い情報<br>(ローン）",
+            "yes": "可",
+            "no": "不可"
+          },
+          "mainImage": "バナー画像",
+          "profileImage": "クリニックアイコン",
+          "photos": "クリニック紹介画像",
+          "etcInfo": "その他情報"
+        },
+        "placeholder": {
+          "region": { "sido": "都道府県を入力", "sigungu": "エリアを選択" },
+          "addressSearch": "郵便番号を入力",
+          "address": "市区町村",
+          "addressDetail": "番地以降の住所を入力してください。",
+          "zipcode": "郵便番号",
+          "accessRoute": "アクセス方法を入力してください。",
+          "subway": "駅を入力してください。",
+          "officeHour": {
+            "start": "開始時間",
+            "end": "終了時間",
+            "etc": "その他情報を入力してください。例）毎月第3月曜日は休診です。"
+          },
+          "opTagList": "選択してください。",
+          "creditCard": "その他の使用可能なクレジットカードを入力してください。",
+          "medicalLoan": "分割情報を入力してください。",
+          "etcInfo": "その他情報を入力してください。"
+        },
+        "button": {
+          "guide": "クリニック情報ガイド",
+          "addressSearch": "住所検索",
+          "officeHour": "すべての曜日にコピーする",
+          "update": "保存する"
+        },
+        "tooltip": {
+          "name": "最初の登録以降、修正できません。",
+          "introduction": "クリニックの電話番号、SNSアカウント、ホームページリンクは登録できません。",
+          "region": "アプリに表示される都道府県とエリア情報を選択してください。",
+          "address": {
+            "default": "郵便番号を入力後、住所検索ボタンを押してください。残りの住所は手動で入力してください。",
+            "error": "郵便番号(例：1010003)を入力後、住所検索ボタンを押してください。残りの住所は手動で入力してください。"
+          },
+          "subway": "一つ目に登録された最寄駅がイベントページでメインの最寄駅として表示されます。",
+          "creditCard": "「不可」を選択した場合はアプリ上に「クレジットカード不可」と表記されます。",
+          "mainImage": "600px x 240px,最大2MB",
+          "profileImage": "300px x 300px,最大2MB",
+          "photos": "1080px x 420px,最大2MB"
+        },
+        "toast": {
+          "require": "必須項目を確認してください。",
+          "hospitalName": "のクリニック名あるいはクリニック紹介項目を確認してください。",
+          "checkItem": "項目を確認してください。",
+          "changed": "変更事項が反映されました。",
+          "zipError": {
+            "title": "郵便番号エラー",
+            "content": "入力された郵便番号から住所が取得できませんでした。"
+          }
+        }
+      },
+      "passwordSettingModal": {
+        "title": "パスワード変更",
+        "label": {
+          "newPassword": "新しいパスワード",
+          "confirmPassword": "新しいパスワード確認"
+        },
+        "placeholder": { "password": "入力してください。" },
+        "button": { "change": "変更する" },
+        "toast": {
+          "login": {
+            "title": "再ログイン後、もう一度実行してください。",
+            "content": "セッションが満了しました。 再ログイン後、もう一度実行してください。"
+          },
+          "change": {
+            "title": "パスワード変更",
+            "content": "パスワードの変更が完了しました。"
+          }
+        }
+      }
+    },
+    "contact": {
+      "detail": {
+        "head": { "title": "カンナムオンニ管理画面" },
+        "breadcrumb": { "home": "ホーム", "info": "連絡先情報" },
+        "header": {
+          "title": "連絡先情報",
+          "description": "クリニック担当者のアカウント情報および連絡先情報を登録するページです。"
+        },
+        "title": "連絡先情報",
+        "notice": "ARSの電話番号は連絡先情報に記入できませんのでご注意ください。",
+        "label": {
+          "staffName": "担当者名",
+          "mainTel": "クリニック電話番号",
+          "emailList": "Eメール"
+        },
+        "button": { "guide": "連絡先情報ガイド", "update": "保存する" },
+        "tooltip": {
+          "mainTel": "お客様が予約・問い合わせをする用の番号です。",
+          "mainTelWarning": "無効な電話番号です。",
+          "emailList": {
+            "main": "大事なお知らせと通知を送ります。アドレスは３つ全て入力する必要はありません。",
+            "error": "正しいメールアドレスを入力してください。"
+          }
+        },
+        "placeholder": {
+          "staffName": "担当者名",
+          "mainTel": "",
+          "tel": "入力してください。",
+          "emailList": "example@healingpaper.com"
+        },
+        "toast": {
+          "changed": "変更事項が反映されました。",
+          "duplicateEmail": "登録済みのメールアドレスです。"
+        }
+      }
+    },
+    "event": {
+      "list": {
+        "head": { "title": "カンナムオンニ管理画面" },
+        "breadcrumb": { "home": "ホーム", "list": "イベント情報" },
+        "header": {
+          "title": "イベント情報",
+          "description": "イベントを管理するページです。"
+        },
+        "table": {
+          "columns": {
+            "isLive": "表示中",
+            "status": "進行ステータス",
+            "titleImage": "バナー画像",
+            "title": "イベントのタイトル",
+            "startTime": "イベントの期間",
+            "opTagList": "施術部位",
+            "discountedCost": "価格",
+            "more": "もっと見る"
+          },
+          "status": {
+            "wait": "待機",
+            "approve": "承認",
+            "hide": "一時非表示",
+            "request": "承認申請中",
+            "reject": "非承認"
+          },
+          "count": "のほか{length}個"
+        },
+        "badge": {
+          "beforeStart": "開始前",
+          "nearingExpiration": "終了間近",
+          "expiration": "期間終了"
+        },
+        "button": {
+          "guide": "イベントガイド",
+          "addEvent": "イベントを登録する",
+          "showRejectMessage": "理由を見る",
+          "more": { "update": "修正する", "requestApprove": "承認申請する" }
+        },
+        "toast": {
+          "statusChange": {
+            "title": "イベントのステータス変更",
+            "content": "待機状態に変更されました。"
+          },
+          "periodChange": {
+            "title": "イベントの期間変更",
+            "content": "イベントの期間が変更されました。"
+          },
+          "cannotExtendPeriod": "期間延長はイベントが承認状態の場合にのみ使用できます。まず、イベントの承認要請を行ってください。",
+          "request": {
+            "title": "承認要請をカンナムオンニで受け付けました。",
+            "content": "受け付けた内容は24時間以内に順番に処理される予定です。"
+          }
+        },
+        "dialog": {
+          "warning": "警告",
+          "confirmStatusChange": "本当に待機状態にしますか？",
+          "confirm": "確認",
+          "cancel": "キャンセル",
+          "reject": "非承認の理由"
+        }
+      },
+      "detail": {
+        "head": { "title": "カンナムオンニ管理画面" },
+        "breadcrumb": {
+          "list": "イベント情報",
+          "write": { "detail": "イベント登録" },
+          "edit": { "detail": "イベント修正" }
+        },
+        "notice": "赤い星マークのある項目が必須入力で、他項目は任意となります。<br/>登録される画像や文章は全てクリニックの管理下にあるものを使用し、著作権を侵害するコンテンツの使用はお控えください。",
+        "header": {
+          "write": {
+            "title": "イベント登録",
+            "description": "新規イベントを登録するページです。"
+          },
+          "edit": {
+            "title": "イベント修正",
+            "description": "イベントを修正するページです。"
+          }
+        },
+        "cardTitle": {
+          "basicInfo": "イベントの基本情報",
+          "subInfo": "イベントの詳細情報"
+        },
+        "label": {
+          "title": "イベントタイトル",
+          "eventScheduleDate": "イベントの期間",
+          "discountedPrice": "割引後の価格(税込)",
+          "originalPrice": "通常価格(税込)",
+          "downtimeTag": "ダウンタイム",
+          "sameDaySurgeonReserve": "当日施術可否",
+          "titleImage": "バナー画像",
+          "cardImage": "カード画像",
+          "sex": "対象の性別",
+          "operationTags": "施術名タグ",
+          "freeTags": "自由タグ",
+          "surgeonExplanation": "施術内容",
+          "recommendFor": "こんな方におすすめ",
+          "beforeAfter": "症例写真",
+          "surgeonTime": "施術時間",
+          "surgeonProcedure": "施術の流れ",
+          "equipment": "使用する機器・製品",
+          "qustionAnswer": "よくある質問",
+          "afterCare": "アフターケア",
+          "sideEffect": "注意事項・副作用"
+        },
+        "template": {
+          "recommendFor": {
+            "subLabel": "施術を受ける対象を入力してください。 (例として作られた５つの項目をすべて埋める必要はなく、入力されていない項目は表示されません。)"
+          },
+          "beforeAfter": {
+            "before": "Before",
+            "after": "After",
+            "day": "経過日数",
+            "unit": "日後",
+            "explanation": "説明（任意）"
+          },
+          "surgeonTime": { "unit": "分" },
+          "surgeonProcedure": {
+            "image": "施術の流れイメージ",
+            "explanation": "説明"
+          },
+          "equipment": {
+            "image": "使用する機器・製品画像",
+            "title": "機器・製品名",
+            "explanation": "機器・製品についての説明"
+          },
+          "qustionAnswer": { "set": "Q&A" }
+        },
+        "placeholder": {
+          "eventScheduleDate": "イベント期間の選択",
+          "surgeonExplanation": "例: ウルトラセルハイフとは、HIFUという高密度焦点式超音波レーザーを使用して、短時間で快適に肌のリフトアップやたるみ・しわの改善、ボディの部分的な引き締めにはたらきかけます。\n\n表皮、真皮、SMAS（表情筋層）にまで直接熱を与えて脂肪細胞を破壊し、肌の奥深くから引き締め・引き上げを行う、切らないリフトアップ治療です。頬のたるみや二重アゴなどのリフトアップに効果的で、目周りにも照射が可能なので、目元の小じわ、目の下、まぶたのたるみにも効果的な非外科的治療として人気のリフトアップメニューです。\n\n超音波を照射するので、術後の赤みや腫れもほとんどありません。",
+          "recommendFor": "例: 頬のたるみ・二重あご・フェイスラインが気になる方",
+          "beforeAfter": "例: ウルトラセルハイフ+イオン導入",
+          "surgeonProcedure": {
+            "explanation1": "例: ①カウンセリング: 悩みや気になる部位を伺い、診察します。施術について、詳しい説明と注意事項を案内いたします。",
+            "explanation2": "例: ②メイクオフ: 顔の施術の場合、クレンジングでメイクを落とします。"
+          },
+          "equipment": {
+            "title": "例: ウルトラセルQ+",
+            "explanation": "例: 今年発売された第4世代機器で従来の機器に比べて施術中の痛みが減少しました。"
+          },
+          "qustionAnswer": {
+            "question": "例: いつごろ効果が出ますか？",
+            "answer": "例: 通常施術後1週間程度で効果を実感していただけますが、数ヶ月後にコラーゲンが再生され、最長6ヶ月までこのプロセスが持続します。"
+          },
+          "afterCare": "例: 施術の効果を高め、レーザー照射後の乾燥を保湿してくれるクリームを無料でプレゼントしています。",
+          "sideEffect": "例: 発赤・熱感・痒み・痛み・乾燥が生じます。稀に、コメド、毛嚢炎、埋没毛、膿疱、ほくろ、しみの部分が薄くなる・消える・一時的に濃くなる、色素沈着や内出血、灼熱感、瘢痕が生じることがあります。"
+        },
+        "button": {
+          "guide": "イベントガイド",
+          "addTemplate": "項目を追加する",
+          "request": "承認申請する"
+        },
+        "helpertext": {
+          "downtime": "適当なダウンタイムを選択してください。メイクが可能な時期や腫れ・傷跡が治る等の詳細な内容は下段の注意事項・副作用の部分にご記入ください。",
+          "price": {
+            "info": {
+              "default": "当日施術可を選択した場合、アプリ上に当日施術可（事前相談が必要との案内文あり）と表示されます。不可の場合は表示されません。",
+              "dcOver50": "割引率50％以上：割引後の価格のみ表記",
+              "dcUnder0": "割引後の価格が通常価格より高いです。",
+              "dcUnder50": "割引率50％未満：通常価格と割引後の価格両方表記"
+            },
+            "dcPercent": "通常価格に対する割引率: {percent}%"
+          },
+          "sameDaySurgeonReserve": "当日施術可を選択した場合、アプリ上に当日施術可（事前相談が必要との案内文あり）と表示されます。 不可の場合は表示されません。",
+          "titleImage": "イベントを代表する画像です。 (1080px * 1080px),最大2MB",
+          "cardImage": "メイン画面に表示されるイメージです。 (1080px * 470px),最大2MB",
+          "operationTags": "タグはアプリ上に表示されるものではなく、検索結果と結びつきます。最大8つまで登録でき、施術と関係ないタグは事前の通知なく、イベント承認処理時に削除されます。",
+          "freeTags": "施術名タグにない施術名を登録してください。タグはアプリ上に表示されるものではなく、検索結果と結びつきます。最大8つまで登録でき、施術と関係ないタグは事前の通知なく、イベント承認処理時に削除されます。",
+          "surgeonExplanation": "絵文字は使用できません。(最大500文字まで入力可能)",
+          "recommendFor": "施術を受ける対象について入力してください。 アプリ内ではチェックマークと一緒に表示され、簡単かつ一目で分かる説明を推奨します。（最大5個まで入力可能です）",
+          "beforeAfter": {
+            "image": "Size: 1080px x 1080px,最大2MB",
+            "day": "施術当日からAfter写真までの経過日数を표기되入力してください。After写真は加工・修正せず、Before真と同一の条件下で撮影したものをご使用ください。「０日後」に入力した場合はアプリ上に「施術当日」と表記されます。",
+            "info": "症例写真は最大5セット登録可能です。"
+          },
+          "qustionAnswer": { "info": "Q&Aは10個まで登録可能です。" },
+          "surgeonProcedure": {
+            "image": "size: 1080px x 470px,最大2MB",
+            "info": "施術の流れは１０段階まで登録可能です。"
+          }
+        },
+        "preview": {
+          "title": "カンナムオンニAppイベントページ",
+          "description": "各項目がアプリ内でどのように表示されるかをイベント制作時に参考にしていただければと思います。"
+        },
+        "dialog": {
+          "guide": "イベント登録ガイド",
+          "confirmPageLeave": "作成中のデータがあります。このページから移動してもよろしいですか？"
+        },
+        "toast": {
+          "write": { "title": "イベント登録", "content": "登録が完了しました。" },
+          "edit": {
+            "title": "イベント修正",
+            "content": "イベントが修正されました。"
+          }
+        },
+        "sexList": { "any": "男女両方", "female": "女性", "male": "男性" },
+        "paragraph": {
+          "minContent": "このページを保存するには「イベントのタイトル」「イベントの期間」「イベント価格」の入力が必要です。"
+        }
+      },
+      "datePickerShortcut": {
+        "next7Days": "次の7日間",
+        "next30Days": "次の30日間",
+        "next90Days": "次の90日間",
+        "next180Days": "次の180日間"
+      }
+    }
+  }
+  

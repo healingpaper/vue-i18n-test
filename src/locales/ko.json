@@ -1,9 +1,390 @@
 {
-    "essential_links": "필수 링크",
-    "core_docs": "코어 문서",
-    "forum": "포럼",
-    "community_chat": "커뮤니티 챗",
-    "ecosystem": "애코시스템",
-    "hello_msg": "환영합니다.",
-    "test": "테스트"
-}
+    "common": {
+      "imageUpload": {
+        "label": { "addImage": "이미지 추가" },
+        "alt": { "image": "이미지" },
+        "message": {
+          "uploadError": "url은 필수입니다. 입력해주세요.",
+          "weightError": "최대 파일용량을 초과했습니다. 파일용량은 최대 {size}MB입니다."
+        }
+      },
+      "sideBar": {
+        "dashboard": "홈 ∙ 공지사항",
+        "hospital": {
+          "title": "병원관리",
+          "index": "병원정보",
+          "doctor": "의사정보",
+          "contact": "연락처 정보",
+          "point": "잔고내역"
+        },
+        "event": {
+          "title": "이벤트/리얼모델 관리",
+          "info": "정보",
+          "approval": "승인요청"
+        },
+        "eventV2": "이벤트v2 관리",
+        "consultation": "상담관리",
+        "evaluation": "평가관리",
+        "ads": {
+          "title": "부가광고관리",
+          "info": "부가광고 목록",
+          "approval": "부가광고 신청"
+        },
+        "preAdminMenu": { "stat": "(구)통계" }
+      },
+      "topHeader": {
+        "changePassword": "비밀번호 변경",
+        "logout": "로그아웃",
+        "currentPoint": "잔고: {point}원"
+      },
+      "forms": {
+        "BottomButtons": {
+          "button": {
+            "list": "목록으로",
+            "register": "등록하기",
+            "edit": "수정하기"
+          },
+          "dialog": {
+            "content": "정말로 작성을 취소하시겠습니까? 취소하는 경우 작성한 내용을 다시 불러올 수 없습니다.",
+            "actions": { "cancel": "작성 취소하기", "keep": "계속 작성하기" }
+          }
+        }
+      },
+      "layout": {
+        "Footer": {
+          "info": {
+            "company": "주식회사 힐링페이퍼 | 대표이사: 홍승일",
+            "address": "서울특별시 강남구 테헤란로 124 13층 (논현동, 삼원타워)",
+            "phonenumber": "전화번호: 02-3443-8854",
+            "businessLicenseNumber": "사업자등록번호: 117-81-81256",
+            "onlineMarketingNumber": "통신판매업신고: 2015-서울서초-1147호"
+          },
+          "label": {
+            "introduction": "소개",
+            "guide": "가이드 다운로드",
+            "term": "이용약관"
+          },
+          "button": {
+            "service": "서비스 소개",
+            "company": "회사 소개",
+            "hospital": "병원용 어드민 이용 가이드",
+            "event": "이벤트 제작 가이드",
+            "term": "개인정보 처리방침"
+          },
+          "content": "병원과 함께하는 강남언니는 의료법을 준수합니다. 아래 가이드를 반드시 참고하시어 의료법 준수에 함께 힘써주세요.<br/>(해당 자료를 참고하지 않아 발생하는 불이익은 의료광고의 주체에 있습니다.)"
+        }
+      },
+      "header": "강남언니 관리자용",
+      "buttons": {
+        "goToList": "목록으로",
+        "edit": "수정하기",
+        "register": "등록하기",
+        "confirm": "확인",
+        "cancel": "취소"
+      },
+      "label": { "addImage": "이미지 추가" },
+      "placeholder": {
+        "default": "입력해주세요",
+        "select": "선택해주세요",
+        "maxInput": "최대 {count}자까지 입력이 가능합니다"
+      },
+      "warning": {
+        "maximumSize": "최대 파일 용량을 초과했습니다. 파일 용량은 최대 2MB입니다."
+      },
+      "message": { "noData": "데이터가 없습니다." },
+      "toastMessage": {
+        "checkRequiredField": "필수항목을 확인해주세요",
+        "error": "에러"
+      }
+    },
+    "login": {
+      "detail": {
+        "head": { "title": "강남언니 관리자용" },
+        "loginId": "아이디",
+        "password": "패스워드",
+        "loginBtn": "로그인",
+        "message": "1700여개 병원과 함께하는\n1등 성형앱, 강남언니"
+      }
+    },
+    "doctor": {
+      "list": {
+        "head": { "title": "강남언니 관리자용" },
+        "breadcrumb": { "home": "홈", "list": "의사정보" },
+        "header": {
+          "title": "의사정보",
+          "description": "병원에 소속된 의사를 관리하는 페이지입니다."
+        },
+        "breadcrumbHome": "홈",
+        "breadcrumbDoctorIndex": "의사정보",
+        "headerTitle": "의사정보",
+        "headerDescription": "병원에 소속된 의사를 관리하는 페이지입니다.",
+        "notice": "의사면허 번호 기준으로 의사정보를 관리할 수 있습니다. 면허번호를 정확히 입력해주세요.",
+        "doctorGuideButton": "의사정보 가이드",
+        "registerDoctorButton": "의사 등록하기",
+        "adjustOrderButton": "순서 조정하기",
+        "editButton": "수정하기",
+        "resignDoctorButton": "퇴직 처리하기",
+        "licenseNumber": "의사면허번호",
+        "licenseImageUri": "의사 면허증",
+        "name": "의사명",
+        "history": "연혁",
+        "profileImage": "프로필 이미지",
+        "sex": "성별",
+        "isCeo": "대표원장 여부",
+        "majorCode": "전문의 자격",
+        "majorLicenseNumber": "전문의 자격번호",
+        "majorLicenseImageUri": "전문의 자격증",
+        "opTagList": "진료항목",
+        "opTagListText": "외 {length}개",
+        "reviewCount": "후기수",
+        "rating": "평점(건수)",
+        "seq": "노출순서",
+        "id": "더보기",
+        "ceoText": "대표원장",
+        "waitingStatus": "승인대기중",
+        "resignDoctorDialogContent": "정말 해당 의사를 퇴직 처리하시겠습니까?",
+        "resignDoctorActionTitle1": "퇴직 처리하기",
+        "resignDoctorActionTitle2": "취소",
+        "resignDoctorToastTitle": "퇴직 처리가 완료되었습니다",
+        "addNewDoctorDialogContent": "바로 등록 가능한 의사로 확인되었습니다.<br/>이어서 의사 정보를 입력해주세요.",
+        "addNewDoctorActionTitle": "확인",
+        "moveDoctorToastTitle": "우리 병원으로 이직이 완료되었습니다.",
+        "toast": {
+          "clickDoctorRegistrationButton": "의사 등록은 [의사 등록하기] 버튼을 통해 진행해주세요."
+        }
+      },
+      "orderModal": {
+        "title": "순서 조정하기",
+        "content": "앱에서 노출되는 의사의 순서를 조정해주세요.",
+        "toastErrorMsg": "의사 리스트를 불러오는데 문제가 있습니다. 재로그인 후 다시 시도해주세요.",
+        "toast": {
+          "title": "변경내용이 저장되었습니다.",
+          "errorMsg": "의사 리스트를 불러오는데 문제가 있습니다. 재로그인 후 다시 시도해주세요."
+        },
+        "dialogContent": "노출 순서 조정은 의사 면허번호를 등록한 뒤 사용 가능합니다.<br/>먼저 의사 면허번호를 등록해주세요.<br/>의사 면허번호는 목록 > 더보기 > 수정하기 에서 등록할 수 있습니다.",
+        "actionTitle1": "가이드 보기",
+        "actionTitle2": "확인",
+        "toastTitle": "변경내용이 저장되었습니다.",
+        "saveOrderButton": "저장하기"
+      },
+      "NewDoctorModal": {
+        "title": "의사 등록하기",
+        "content": "의사 등록을 위해 이름, 면허번호를 입력해주세요.",
+        "name": "의사명",
+        "namePlaceholder": "의사명을 입력해주세요.",
+        "licenseNumber": "의사면허번호",
+        "licenseNumberPlaceholder": "숫자만 입력 가능합니다.",
+        "licenseNumberHelperText1": "의사 면허번호는 등록 이후 수정이 불가하므로 신중하게 입력해주세요.",
+        "licenseNumberHelperText2": "허위 정보를 입력할 경우 강남언니 이용에 불이익이 있을 수 있습니다.",
+        "addDoctorButton": "등록하기"
+      },
+      "DoctorInfoModal": {
+        "title": "의사 등록하기",
+        "content": "이미 <b>타 병원에 등록된 의사</b>입니다.",
+        "description": "해당 의사를 우리 병원으로 이직 처리를 원하신다면<br />아래 버튼을 눌러주세요.",
+        "table": {
+          "licenseNumber": "의사면허번호",
+          "name": "의사명",
+          "belongedHospital": "현재 소속 병원"
+        },
+        "button": { "moveDoctor": "우리 병원으로 이직시키기" }
+      },
+      "detail": {
+        "head": { "title": "강남언니 관리자용" },
+        "breadcrumb": {
+          "home": "홈",
+          "list": "의사정보",
+          "detail": "의사정보 수정",
+          "new": "의사정보 등록"
+        },
+        "header": {
+          "title": "의사정보 수정",
+          "description": "병원에 소속된 의사의 정보를 수정하는 페이지입니다.",
+          "newTitle": "의사정보 등록",
+          "newDescription": "병원에 소속된 의사의 정보를 등록하는 페이지입니다."
+        },
+        "notice": "의사 면허증, 전문의 면허증과 입력하신 번호가 동일해야 승인됩니다. (주민등록번호 등과 같은 개인 정보는 마스킹처리하여 업로드 해주세요.)",
+        "duplicationCheckButton": "중복확인",
+        "licenseNumber": "의사면허번호",
+        "licenseNumberPlaceholder": "숫자만 입력해주세요.",
+        "licenseNumberHelperText1": "의사 면허번호는 등록 이후 수정이 불가하므로 신중하게 입력해주세요.",
+        "licenseNumberHelperText2": "허위 정보를 입력할 경우 강남언니 이용에 불이익이 있을 수 있습니다.",
+        "licenseImageUri": "의사 면허증",
+        "licenseImageUriHelperText": "최대 2MB",
+        "name": "의사명",
+        "history": "연혁",
+        "historyHelperText": "학회의 ‘정회원’ 표기는 의료법 위반이므로 ‘회원’으로 표기 바랍니다.",
+        "profileImage": "프로필 이미지",
+        "profileImageHelperText": "300px x 300px, 최대 2MB",
+        "sex": "성별",
+        "male": "남성",
+        "female": "여성",
+        "isCeo": "대표원장 여부",
+        "isCeoLabel": "대표원장인 경우 체크해주세요.",
+        "majorCode": "전문의 자격",
+        "majorCodePlaceholder": "선택해주세요.",
+        "majorCodeHelperText": "실제 전문의 자격이 있는 전공만 선택해야합니다. 허위인 경우 경고없이 삭제될 수 있으며, 해당 전공이 없는 경우 미파악을 선택해주세요.",
+        "noMajor": "전문의 아님",
+        "majorLicenseNumber": "전문의 자격번호",
+        "majorLicenseNumberPlaceholder": "숫자만 입력해주세요.",
+        "majorLicenseNumberHelperText1": "전문의 자격번호는 등록 이후 수정이 불가하므로 신중하게 입력해주세요.",
+        "majorLicenseNumberHelperText2": "허위 정보를 입력할 경우 강남언니 이용에 불이익이 있을 수 있습니다.",
+        "majorLicenseImageUri": "전문의 자격증",
+        "majorLicenseImageUriHelperText": "최대 2MB",
+        "opTagList": "진료항목",
+        "opTagListPlaceholder": "선택해주세요.",
+        "isConfirmedPrivacyPolicy": "약관동의",
+        "inputPlaceholder": "입력해주세요",
+        "newDoctorToastWarningMessage": "의사 등록은 [의사 등록하기] 버튼을 통해 진행해주세요.",
+        "postDoctorToastTitle": "의사정보 등록",
+        "postDoctorToastContent": "등록이 완료되었습니다.",
+        "helpertext": { "maxImageSize": "최대 {size}MB" },
+        "toast": {
+          "editTitle": "의사정보 수정",
+          "editContent": "변경사항이 반영되었습니다.",
+          "checkLicenseNumber": "의사 면허번호 중복 확인을 진행해주세요.",
+          "alreadyExist": "이미 타 병원에 등록된 의사입니다.<br/>해당 의사를 이직시키려면 고객센터에 문의해주세요.",
+          "availableDoctorLicense": "등록 가능한 의사 면허번호입니다."
+        }
+      }
+    },
+    "hospital": {
+      "detail": {
+        "head": { "title": "강남언니 관리자용" },
+        "breadcrumb": { "home": "홈", "list": "", "detail": "병원 정보" },
+        "header": {
+          "title": "병원 정보",
+          "description": "병원의 기본적인 정보를 등록하는 페이지입니다."
+        },
+        "label": {
+          "name": "병원명",
+          "namePronouce": "",
+          "introduction": "간단소개",
+          "region": "지역",
+          "addressSearch": "주소",
+          "addressLocal": "국문 주소",
+          "accessRoute": "",
+          "subway": "지하철역",
+          "officeHour": {
+            "main": "운영 시간",
+            "mon": "월요일",
+            "tue": "화요일",
+            "wed": "수요일",
+            "thu": "목요일",
+            "fri": "금요일",
+            "sat": "토요일",
+            "sun": "일요일"
+          },
+          "opTagList": "진료과목",
+          "badgeCode": "부가 서비스",
+          "creditCard": "",
+          "medicalLoan": { "main": "", "yes": "", "no": "" },
+          "mainImage": "배너이미지",
+          "profileImage": "프로필 이미지",
+          "introImage": "간단 소개 이미지",
+          "photos": "병원 소개이미지",
+          "etcInfo": "기타정보"
+        },
+        "placeholder": {
+          "region": {
+            "sido": "시도를 선택해주세요.",
+            "sigungu": "시군구를 선택해주세요."
+          },
+          "addressSearch": "",
+          "address": "국문 도로명 주소 (주소검색을 통해 나오는 주소)",
+          "addressDetail": "국문 상세주소를 입력해주세요. 예) 힐링타워 17층",
+          "zipcode": "우편번호",
+          "accessRoute": "",
+          "subway": "선택해주세요",
+          "officeHour": {
+            "start": "시작시간",
+            "end": "종료시간",
+            "etc": "기타 정보를 입력해주세요. 예) 매주 셋째주 월요일 휴진입니다."
+          },
+          "opTagList": "선택해주세요",
+          "creditCard": "",
+          "medicalLoan": "",
+          "etcInfo": ""
+        },
+        "button": {
+          "guide": "병원정보 가이드",
+          "addressSearch": "주소검색",
+          "officeHour": "모든 요일에 복사하기",
+          "update": "수정하기"
+        },
+        "tooltip": {
+          "name": "최초 등록 이후 수정이 불가능합니다.",
+          "introduction": "병원의 대표 전화번호, SNS ID, 홈페이지 주소를 등록할 수 없습니다.",
+          "region": "앱에 표시될 시도 및 시군구를 선택해주세요.",
+          "address": "주소검색으로 한글 주소를 검색하면 영문 주소는 자동으로 입력됩니다. 층, 호수 등 상세 주소는 수동으로 채워주세요.",
+          "subway": "최대 4개까지 입력이 가능합니다.",
+          "mainImage": "600px x 240px,최대 2MB",
+          "profileImage": "300px x 300px,최대 2MB",
+          "introImage": "190px x 190px,최대 2MB",
+          "photos": "640px x 400px,최대 2MB"
+        },
+        "toast": {
+          "require": "필수항목을 확인해주세요.",
+          "hospitalName": "의병원명 또는 간단소개 항목을 확인해주세요.",
+          "checkItem": " 항목을 확인해주세요.",
+          "changed": "변경사항이 반영되었습니다."
+        }
+      },
+      "passwordSettingModal": {
+        "title": "비밀번호 변경",
+        "label": {
+          "newPassword": "새 비밀번호",
+          "confirmPassword": "새 비밀번호 확인"
+        },
+        "placeholder": { "password": "입력하세요" },
+        "button": { "change": "변경하기" },
+        "toast": {
+          "login": {
+            "title": "재로그인 후 다시 시도해주세요.",
+            "content": "세션이 만료되었습니다. 재로그인 후 다시 시도해주세요."
+          },
+          "change": {
+            "title": "비밀번호 변경",
+            "content": "비밀번호 변경이 완료되었습니다."
+          }
+        }
+      }
+    },
+    "contact": {
+      "detail": {
+        "head": { "title": "강남언니 관리자용" },
+        "breadcrumb": { "home": "홈", "info": "연락처 정보" },
+        "header": {
+          "title": "연락처 정보",
+          "description": "병원 담당자의 계정정보 및 연락처를 등록하는 페이지입니다."
+        },
+        "title": "연락처 정보",
+        "notice": "ARS 전화번호는 연락처 정보에 기입하실 수 없으므로 유의해주시기 바랍니다.",
+        "label": {
+          "staffName": "담당자명",
+          "mainTel": "대표 전화번호",
+          "emailList": "이메일"
+        },
+        "button": { "guide": "연락처정보 가이드", "update": "저장하기" },
+        "tooltip": {
+          "mainTel": "병원의 대표 전화입니다.",
+          "mainTelWarning": "유효하지 않은 대표전화 번호입니다.",
+          "emailList": {
+            "main": "주요 공지사항 및 안내를 받습니다.",
+            "error": "올바른 이메일 형식을 입력해주세요."
+          }
+        },
+        "placeholder": {
+          "staffName": "담당자명",
+          "mainTel": "",
+          "tel": "입력하세요",
+          "emailList": "example@healingpaper.com"
+        },
+        "toast": {
+          "changed": "변경사항이 반영되었습니다.",
+          "duplicateEmail": "이미 등록된 이메일입니다."
+        }
+      }
+    }
+  }
+  
